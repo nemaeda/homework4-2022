@@ -1,6 +1,7 @@
 body {
-    background-image: url(../images/concrete_seamless.png)
-
+    background-image: url(../images/concrete_seamless.png);
+    font-family: 'Poppins', serif;
+    background-color: #f1f1f1;
 }
 
 header {
@@ -103,7 +104,7 @@ header img {
 @media print {
     body {
         background-image: none;
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     nav {
@@ -117,7 +118,9 @@ header img {
 
     .pricing {
         display: flex;
+        flex-flow: row nowrap;
         align-items: flex-end;
+
     }
 
     .card {
@@ -132,4 +135,9 @@ header img {
     .gallery {
         display: none;
     }
+
+    .card li:nth-of-type(2)::after {
+        content: "👍";
+    }
+
 }
